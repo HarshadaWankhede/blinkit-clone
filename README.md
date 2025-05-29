@@ -1,12 +1,46 @@
-# React + Vite
+# Blinkit Clone Grocery App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A responsive **Blinkit-style Grocery Shopping App** built using **React.js** with dynamic cart functionality and category-based product filtering. All data is stored locally using a JSON file.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛒 Features
 
-## Expanding the ESLint configuration
+### 🏠 Home Page
+- Displays product categories:
+  - Vegetables
+  - Fruits
+  - Grains
+  - Dairy
+  - Bakery
+  - Cold Drinks
+  - Instant Food
+- Clicking on a category shows all products under that category.
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 🛍️ Product Display
+- Shows:
+  - Product Image
+  - Name
+  - Price per unit
+  - Quantity control (Increase/Decrease buttons)
+  - "Add to Cart" button
+
+### 🧺 Cart Functionality
+- Shows all items added to the cart.
+- Dynamic pricing based on quantity (e.g., 2 items at ₹30 each = ₹60).
+- Ability to:
+  - Remove individual items.
+- Displays the **total bill** based on the cart.
+
+### 📦 All Products Page
+- Users can also browse all available products regardless of category.
+
+
+## 🧱 Tech Stack
+
+- **React.js**
+- **React Hooks** (`useState`, `useEffect`)
+- **Local JSON file** for data storage
+- **Custom CSS** for UI styling and responsiveness
+
+
