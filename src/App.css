@@ -1,0 +1,67 @@
+.filter-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.filter-buttons button {
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  color: black;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.filter-buttons button:nth-child(1) {
+  background-color: #4caf50; /* green - veg */
+}
+
+.filter-buttons button:nth-child(2) {
+  background-color: #f44336; /* red - nonveg */
+}
+
+.filter-buttons button:nth-child(3) {
+  background-color: #009688; /* teal - all */
+}
+
+.filter-buttons button:hover {
+  opacity: 0.85;
+  transform: translateY(-2px);
+}
+.zomato-heading {
+  text-align: center;
+  font-size: 36px;
+  color: #e91e63; /* Zomato-themed pink */
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.qty-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background-color: white;
+  color: #e91e63;
+  border: 1.5px solid #e91e63;
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.qty-icon:hover {
+  background-color: #e91e63;
+  color: white;
+}

@@ -1,0 +1,80 @@
+.landingpage {
+    min-height: 100vh;
+    background-image: url('./../images/landingimg.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: grid;
+    place-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .landing-container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    width: 350px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+  }
+  
+  .header {
+    text-align: center;
+    margin-bottom: 1rem;
+    
+  }
+  
+  .btn-box {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .btn-box button {
+    padding: 0.5rem 1.5rem;
+    background-color: #00c853;
+    color: black;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background 0.3s;
+  }
+  
+  .btn-box button:hover {
+    background-color: black;
+  }
+  
+  .form-box input {
+    width: 100%;
+    padding: 0.7rem;
+    margin: 0.5rem 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-box button {
+    width: 100%;
+    padding: 0.7rem;
+    background-color: #00c853;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-top: 0.5rem;
+    cursor: pointer;
+  }
+  
+  .forgotten-pswd {
+    text-align: center;
+    margin-top: 0.5rem;
+  }
+  
+  .forgotten-pswd a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .forgotten-pswd a:hover {
+    text-decoration: underline;
+  }
+  
