@@ -1,4 +1,6 @@
 # Logs
+category.json
+
 logs
 *.log
 npm-debug.log*
