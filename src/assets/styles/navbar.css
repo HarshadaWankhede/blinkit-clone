@@ -1,83 +1,82 @@
 
 .navbar {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
+  justify-content: space-between;
+  background-color: #fff;
   padding: 10px 20px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
   position: sticky;
   top: 0;
   z-index: 1000;
+}
 
- 
-  .nav-left {
-    .logo {
-      height: 70px;
-      width: auto;
-      object-fit: contain;
-      cursor: pointer;
-    }
+.logo {
+  height: 60px;
+  width: auto;
+  object-fit: contain;
+  cursor: pointer;
+}
+
+.menu-toggle {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #333;
+  cursor: pointer;
+  display: none;
+}
+
+.nav-menu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #32cd32;
+}
+
+.login-btn {
+  background-color: #32cd32;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 5px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+}
+
+.login-btn:hover {
+  background-color: #28a428;
+}
+
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
   }
 
-  
-  .nav-center {
-    display: flex;
-    gap: 20px;
-
-    .nav-link {
-      text-decoration: none;
-      color: #333;
-      font-weight: 500;
-      transition: color 0.3s;
-    }
-
-    .nav-link:hover {
-      color: #32cd32;
-    }
-  }
-
- 
-  .nav-right {
-    display: flex;
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
     align-items: center;
+    padding: 1rem 0;
+    display: none;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
 
-    .cart-icon{
-      margin-right: 30px;
-    }
-
-    .login-btn {
-      margin-right: 30px;
-      text-decoration: none;
-      background-color: #32cd32;
-      color: white;
-      padding: 6px 12px;
-      border-radius: 5px;
-      font-weight: bold;
-      transition: background-color 0.3s;
-
-      
-    }
-
-    .login-btn:hover {
-      background-color: #28a428;
-    }
-
-    .cart-icon {
-      position: relative;
-      color: #333;
-      text-decoration: none;
-      font-size: 1.8rem;
-
-      .cart-count {
-        position: absolute;
-        top: -8px;
-        right: -10px;
-        color: white;
-        font-size: 0.7rem;
-        padding: 2px 6px;
-        border-radius: 50%;
-      }
-    }
+  .nav-menu.open {
+    display: flex;
   }
 }

@@ -598,5 +598,14 @@
       "id": "5309"
     }
   ],
-  "cart": []
+  "cart": [
+    {
+      "id": "e99a",
+      "title": "Tomato",
+      "MRP": 20,
+      "img": "/images/tomato.png",
+      "category": "Vegetables",
+      "qty": 2
+    }
+  ]
 }

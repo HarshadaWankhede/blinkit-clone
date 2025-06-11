@@ -1,80 +1,127 @@
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
 .landingpage {
-    min-height: 100vh;
-    background-image: url('./../images/landingimg.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    display: grid;
-    place-items: center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Arial', sans-serif;
-  }
-  
+  min-height: 100vh;
+  background-image: url('./../images/landingimg.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  box-sizing: border-box;
+}
+
+.landing-container {
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+}
+
+.btn-box {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.btn-box button {
+  padding: 0.6rem 2rem;
+  background-color: #00c853;
+  color: black;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s;
+}
+
+.btn-box button:hover {
+  background-color: black;
+  color: white;
+}
+
+.form-box input {
+  border: 1px solid #ccc;
+  width: 100%;
+  max-width: 100%;
+  padding: 0.7rem;
+  margin: 0.5rem 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.form-box button {
+  width: 100%;
+  padding: 0.7rem;
+  background-color: #00c853;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 0.5rem;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+.forgotten-pswd {
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+.forgotten-pswd a {
+  color: #007bff;
+  text-decoration: none;
+}
+
+.forgotten-pswd a:hover {
+  text-decoration: underline;
+}
+
+
+@media (max-width: 768px) {
   .landing-container {
-    background-color: rgba(255, 255, 255, 0.9);
-    padding: 2rem;
-    border-radius: 10px;
-    width: 350px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.7);
+    padding: 1.5rem;
+    max-width: 90%;
   }
-  
-  .header {
-    text-align: center;
-    margin-bottom: 1rem;
-    
-  }
-  
-  .btn-box {
-    text-align: center;
-    margin-bottom: 1rem;
-  }
-  
-  .btn-box button {
-    padding: 0.5rem 1.5rem;
-    background-color: #00c853;
-    color: black;
-    border: none;
-    border-radius: 20px;
-    cursor: pointer;
-    transition: background 0.3s;
-  }
-  
-  .btn-box button:hover {
-    background-color: black;
-  }
-  
-  .form-box input {
-    width: 100%;
-    padding: 0.7rem;
-    margin: 0.5rem 0;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-  }
-  
+
+  .btn-box button,
   .form-box button {
-    width: 100%;
-    padding: 0.7rem;
-    background-color: #00c853;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    margin-top: 0.5rem;
-    cursor: pointer;
+    font-size: 0.95rem;
   }
-  
-  .forgotten-pswd {
-    text-align: center;
-    margin-top: 0.5rem;
+
+  .header {
+    font-size: 1.3rem;
   }
-  
-  .forgotten-pswd a {
-    color: #007bff;
-    text-decoration: none;
+}
+
+@media (max-width: 480px) {
+  .landing-container {
+    padding: 1rem;
   }
-  
-  .forgotten-pswd a:hover {
-    text-decoration: underline;
+
+  .header {
+    font-size: 1.1rem;
   }
-  
+
+  .btn-box button,
+  .form-box input,
+  .form-box button {
+    font-size: 0.9rem;
+    padding: 0.6rem;
+  }
+}
